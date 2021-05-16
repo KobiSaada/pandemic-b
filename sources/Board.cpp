@@ -59,7 +59,7 @@ void Board::add_cure(Color color)
 bool Board::have_cure(const City c)
 {
    
-  return (bool)_curesD.count(city_color(c));
+  return _curesD.count(city_color(c));
 
 }
 Color Board::city_color(City city) 
